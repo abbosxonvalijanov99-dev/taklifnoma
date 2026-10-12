@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maxsus Taklifnoma</title>
+  <title>Maxsus Taklifnoma & Topshiriq Paneli</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   
@@ -22,30 +22,34 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
+      padding: 30px 15px;
+      color: #ffffff;
+    }
+
+    /* CONTAINER */
+    .main-container {
+      max-width: 650px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
     }
 
     /* CARD DESIGN */
-    .card-container {
-      max-width: 480px;
-      width: 100%;
-    }
-
     .card {
       background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border: 1px solid rgba(255, 255, 255, 0.15);
       border-radius: 24px;
-      padding: 40px 30px;
+      padding: 35px 25px;
       text-align: center;
-      color: #ffffff;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
       transition: transform 0.3s ease;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-3px);
     }
 
     /* HEADINGS */
@@ -60,7 +64,6 @@
     .main-title {
       font-size: 1.5rem;
       font-weight: 600;
-      letter-spacing: 0.5px;
       color: #f8fafc;
       line-height: 1.4;
     }
@@ -69,7 +72,7 @@
       height: 2px;
       width: 60px;
       background: #fbbf24;
-      margin: 20px auto;
+      margin: 18px auto;
       border-radius: 2px;
     }
 
@@ -77,26 +80,26 @@
       font-size: 0.95rem;
       color: #cbd5e1;
       line-height: 1.6;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
-    /* DETAILS GRID (KUN, VAQT, MANZIL) */
+    /* DETAILS GRID */
     .event-details {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     .detail-box {
       background: rgba(255, 255, 255, 0.07);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 16px;
-      padding: 15px 5px;
+      padding: 12px 5px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
     }
 
     .detail-box.highlight {
@@ -104,53 +107,121 @@
       background: rgba(251, 191, 36, 0.1);
     }
 
-    .detail-box .icon {
-      font-size: 1.3rem;
-    }
-
+    .detail-box .icon { font-size: 1.2rem; }
     .detail-box .label {
       font-size: 0.65rem;
       letter-spacing: 1px;
       color: #94a3b8;
       font-weight: 600;
     }
-
     .detail-box .value {
       font-size: 0.8rem;
       font-weight: 600;
       color: #ffffff;
     }
 
-    /* FOOTER & BUTTON */
     .inviter {
       font-size: 0.9rem;
       color: #94a3b8;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
-
-    .inviter strong {
-      color: #fbbf24;
-    }
+    .inviter strong { color: #fbbf24; }
 
     .btn-rsvp {
       background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
       color: #0f172a;
       border: none;
-      padding: 14px 28px;
+      padding: 12px 28px;
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       border-radius: 50px;
       cursor: pointer;
       transition: all 0.3s ease;
       box-shadow: 0 10px 20px rgba(251, 191, 36, 0.2);
     }
-
     .btn-rsvp:hover {
       transform: scale(1.05);
       box-shadow: 0 12px 25px rgba(251, 191, 36, 0.4);
     }
 
-    /* RESPONSIVE DESIGN */
+    /* LAB TASK / IAM / BRANCH PROTECTION SECTIONS */
+    .task-section {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 25px;
+      text-align: left;
+    }
+
+    .task-section h2 {
+      font-size: 1.1rem;
+      color: #fbbf24;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .task-section p {
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    /* ROLES TABLE */
+    .table-responsive {
+      overflow-x: auto;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    th {
+      background: rgba(251, 191, 36, 0.15);
+      color: #fbbf24;
+      font-weight: 600;
+    }
+
+    td { color: #e2e8f0; }
+
+    /* CHECKLIST LIST */
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .checklist li {
+      font-size: 0.88rem;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 10px 14px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .checklist-icon {
+      color: #10b981;
+      font-weight: bold;
+    }
+
+    /* RESPONSIVE */
     @media (max-width: 480px) {
       .event-details {
         grid-template-columns: 1fr;
@@ -160,7 +231,9 @@
 </head>
 <body>
 
-  <div class="card-container">
+  <div class="main-container">
+
+    <!-- TAKLIFNOMA KARTASI -->
     <div class="card">
       <div class="card-header">
         <span class="sub-title">Siz taklif etildingiz</span>
@@ -174,7 +247,6 @@
           Hurmatli do'stlar va hamkasblar! Sizni bizning yangi loyihamiz taqdimoti va do'stona uchrashuvimizga lutfen taklif etamiz.
         </p>
 
-        <!-- KUN VA SANALAR DIZAYNI -->
         <div class="event-details">
           <div class="detail-box">
             <span class="icon">📅</span>
@@ -203,6 +275,73 @@
         </button>
       </div>
     </div>
+
+    <!-- 4-QADAM: IAM / RBAC -->
+    <div class="task-section">
+      <h2>🔐 4-QADAM Kirish Nazorati (IAM / RBAC) va Rollar Taqsimoti</h2>
+      <p>Loyiha sozlamalaridan «Collaborators» menyusiga kiring va «Add people» orqali guruhdoshingizga taklifnoma yuboring.</p>
+      
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Rol (Role)</th>
+              <th>Huquq darajasi</th>
+              <th>Xavfsizlik maqsadi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Read</strong></td>
+              <td>Faqat ko'rish va klonlash</td>
+              <td>Audit o'tkazuvchilar va kuzatuvchilar uchun</td>
+            </tr>
+            <tr>
+              <td><strong>Write</strong></td>
+              <td>Kod yuklash va tahrirlash</td>
+              <td>Jamoa dasturchilari uchun</td>
+            </tr>
+            <tr>
+              <td><strong>Admin</strong></td>
+              <td>To'liq boshqaruv (o'chirish, ruxsat berish)</td>
+              <td>Faqat loyiha egasi va yetakchi mutaxassis uchun</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 5-QADAM: BRANCH PROTECTION -->
+    <div class="task-section">
+      <h2>🛡️ 5-QADAM Kod Himoyasi Siyosati (Branch Protection)</h2>
+      <p>Asosiy kodni (<code>main</code>) ruxsatsiz o'zgartirish yoki tasodifan o'chirib yuborishdan himoyalash:</p>
+      <ol style="margin-left: 20px; font-size: 0.85rem; color: #cbd5e1; line-height: 1.6;">
+        <li>Settings &rarr; Branches bo'limiga o'ting.</li>
+        <li>«Add branch ruleset» (yoki Add rule) tugmasini bosing.</li>
+        <li>Target branch: <code>main</code> deb belgilang.</li>
+        <li>«Restrict deletions» va «Require a pull request before merging» bandlarini faollashtirib, saqlang.</li>
+      </ol>
+    </div>
+
+    <!-- CHECKLIST -->
+    <div class="task-section">
+      <h2>✅ 3. Talaba O'zini Tekshirish Nazorat Ro'yxati (Checklist)</h2>
+      <ul class="checklist">
+        <li>
+          <span class="checklist-icon">✓</span>
+          <span><strong>Deploy qilindi:</strong> Sayt GitHub Pages orqali internetda ochiq ochilmoqda.</span>
+        </li>
+        <li>
+          <span class="checklist-icon">✓</span>
+          <span><strong>RBAC joriy etildi:</strong> Collaborators bo'limida kamida 1 nafar foydalanuvchiga taklifnoma yuborildi.</span>
+        </li>
+        <li>
+          <span class="checklist-icon">✓</span>
+          <span><strong>Xavfsizlik yoqildi:</strong> <code>main</code> tarmog'i uchun Branch Protection faol holatga keltirildi.</span>
+        </li>
+      </ul>
+    </div>
+
   </div>
 
   <script>
