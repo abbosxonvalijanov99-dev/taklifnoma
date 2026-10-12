@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maxsus Taklifnoma</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* RESET & GENERAL STYLES */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* CARD DESIGN */
+    .card-container {
+      max-width: 480px;
+      width: 100%;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 24px;
+      padding: 40px 30px;
+      text-align: center;
+      color: #ffffff;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* HEADINGS */
+    .sub-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.4rem;
+      color: #fbbf24;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .main-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: #f8fafc;
+      line-height: 1.4;
+    }
+
+    .divider {
+      height: 2px;
+      width: 60px;
+      background: #fbbf24;
+      margin: 20px auto;
+      border-radius: 2px;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    /* DETAILS GRID (KUN, VAQT, MANZIL) */
+    .event-details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .detail-box {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 15px 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .detail-box.highlight {
+      border-color: #fbbf24;
+      background: rgba(251, 191, 36, 0.1);
+    }
+
+    .detail-box .icon {
+      font-size: 1.3rem;
+    }
+
+    .detail-box .label {
+      font-size: 0.65rem;
+      letter-spacing: 1px;
+      color: #94a3b8;
+      font-weight: 600;
+    }
+
+    .detail-box .value {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    /* FOOTER & BUTTON */
+    .inviter {
+      font-size: 0.9rem;
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    .inviter strong {
+      color: #fbbf24;
+    }
+
+    .btn-rsvp {
+      background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+      color: #0f172a;
+      border: none;
+      padding: 14px 28px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 20px rgba(251, 191, 36, 0.2);
+    }
+
+    .btn-rsvp:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(251, 191, 36, 0.4);
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 480px) {
+      .event-details {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-header">
+        <span class="sub-title">Siz taklif etildingiz</span>
+        <h1 class="main-title">Loyiha Taqdimoti & Bayram Tadbiri</h1>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="card-body">
+        <p class="description">
+          Hurmatli do'stlar va hamkasblar! Sizni bizning yangi loyihamiz taqdimoti va do'stona uchrashuvimizga lutfen taklif etamiz.
+        </p>
+
+        <!-- KUN VA SANALAR DIZAYNI -->
+        <div class="event-details">
+          <div class="detail-box">
+            <span class="icon">📅</span>
+            <span class="label">SANA</span>
+            <span class="value">25-Oktabr, 2026</span>
+          </div>
+
+          <div class="detail-box highlight">
+            <span class="icon">⏰</span>
+            <span class="label">VAQT</span>
+            <span class="value">18:00</span>
+          </div>
+
+          <div class="detail-box">
+            <span class="icon">📍</span>
+            <span class="label">MANZIL</span>
+            <span class="value">IT Park, Toshkent</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <p class="inviter">Tashkilotchi: <strong>DevTeam Jamoasi</strong></p>
+        <button class="btn-rsvp" onclick="tasdiqlash()">
+          Ishtirokni Tasdiqlash
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function tasdiqlash() {
+      alert("Taklifni qabul qilganingiz uchun tashakkur! Sizni kutib qolamiz.");
+    }
+  </script>
+
+</body>
+</html>
